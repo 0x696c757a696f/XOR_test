@@ -47,7 +47,7 @@ for epoch in range(num_epochs):
     if epoch%1000 == 0: 
         print("Epoch: {0}, Loss: {1}, ".format(epoch, loss_this_epoch.item()))
 print("Function after training:")
-print("f(0,0) = {}".format(model(Variable(torch.FloatTensor([0.0,0.0]).cuda().unsqueeze(0)))))
-print("f(0,1) = {}".format(model(Variable(torch.FloatTensor([0.0,1.0]).cuda().unsqueeze(0)))))
-print("f(1,0) = {}".format(model(Variable(torch.FloatTensor([1.0,0.0]).cuda().unsqueeze(0)))))
-print("f(1,1) = {}".format(model(Variable(torch.FloatTensor([1.0,1.0]).cuda().unsqueeze(0)))))
+print("f(0,0) = {}".format(model1(Variable(torch.FloatTensor([0.0,0.0]).cuda().unsqueeze(0)))))
+print("f(0,1) = {}".format(model1(Variable(torch.FloatTensor([0.0,1.0]).cuda().unsqueeze(0)))))
+print("f(1,0) = {}".format(model1(Variable(torch.FloatTensor([1.0,0.0]).cuda().unsqueeze(0)))))
+print("f(1,1) = {}".format(model1(Variable(torch.FloatTensor([1.0,1.0]).cuda().unsqueeze(0)))))
